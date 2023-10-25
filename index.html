@@ -1,100 +1,185 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Team 6989</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="index.css">
+  <head>
+    <title>Team 6989</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/src/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/src/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/src/favicons/favicon-16x16.png">
-  <link rel="manifest" href="/src/favicons/site.webmanifest">
-  <link rel="mask-icon" href="/src/favicons/safari-pinned-tab.svg" color="#34343c">
-  <link rel="shortcut icon" href="/src/favicons/favicon.ico">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-config" content="/src/favicons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/src/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/src/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/src/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/src/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/src/favicons/safari-pinned-tab.svg"
+      color="#34343c"
+    />
+    <link rel="shortcut icon" href="/src/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-config"
+      content="/src/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/slickscrolljs@2.0.2/dist/slickscroll.node.min.js"></script>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
 
-<body>
-  <div class="bgVideoWrapper">
-    <div class="loading-spinner"></div>
-    <video autoplay muted loop id="bgVideo">
-      <source src="src/welcomebgvid_compressed.mp4" type="video/mp4">
-    </video>
-  </div>
-  <div class="contentOutline"><div class="contentWrapper">
-  <div class="navbar">
-    <div class="navbar-left">
-      <a href="#about">About Us</a>
-      <a href="#projects">Our Projects</a>
+  <body>
+    <div class="bgVideoWrapper">
+      <div class="loading-spinner"></div>
+      <video autoplay muted loop id="bgVideo">
+        <source src="src/welcomebgvid_compressed.mp4" type="video/mp4" />
+      </video>
     </div>
-    <div class="navbar-mid">
-      <h2>KAISER</h2>
-      <p>Robotics</p>
+    <div class="contentOutline">
+      <div class="navbar">
+        <div class="navbar-left">
+          <a href="#about">About Us</a>
+          <a href="#projects">Our Projects</a>
+        </div>
+        <div class="navbar-mid">
+          <h2>KAISER</h2>
+          <p>Robotics</p>
+        </div>
+        <div class="navbar-right">
+          <a href="#sponsors">Sponsors</a>
+          <a href="#contact">Contact Us</a>
+          <button
+            id="navbar-extend"
+            aria-controls="dropdown-fullscreen"
+            aria-expanded="false"
+          >
+            <svg
+              stroke="var(--text)"
+              fill="none"
+              class="hamburger"
+              viewBox="-10 -10 120 120"
+            >
+              <path
+                class="line"
+                stroke-width="8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="contentWrapper" id="luxy">
+        <div class="welcomeWrapper">
+          <img id="welcomeImg" src="src/kaiser-colour-rgb.png" />
+          <p><span>Team 6989</span></p>
+          <h1><span class="reveal">More than robots.</span></h1>
+          <a onclick="learnMore();"
+            ><span>Discover More <i class="fa-solid fa-arrow-down"></i></span
+          ></a>
+        </div>
+
+        <section id="about">
+          <div class="luxy-el textArea" data-speed-y="5" data-offset="-110">
+            <h2>Who are we?</h2>
+            <p>
+              We are the Kaiser robotics team, taking its name from the German
+              word meaning "Emperor". We first started our journey at Istanbul
+              German High School in 2014. Since then we have been participating
+              in robotics competitions. After learning about the FIRST
+              foundation in 2017, we started to participate in FIRST Robotics
+              Competition (FRC) with the robots we have made.
+              <br />
+              We aim to create "more than robots", continuing on our way with
+              strength and passion in order to contribute to society and become
+              a part of the developing world to leave an impact.
+            </p>
+          </div>
+          <div class="imageArea" >
+            <img class="luxy-el" data-speed-y="4" data-offset="-30" src="src/images/IMG_0015.jpeg" />
+          </div>
+        </section>
+        <section style="height: 1000px;">
+
+        </section>
+      </div>
     </div>
-    <div class="navbar-right">
-      <a href="#sponsors">Sponsors</a>
-      <a href="#contact">Contact Us</a>
-      <button id="navbar-extend" aria-controls="dropdown-fullscreen" aria-expanded="false">
-
-      <svg stroke="var(--text)" fill="none" class="hamburger" viewBox="-10 -10 120 120">
-        <path class="line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
-        </path>
-      </svg>
-        
-      </button>
+    <div id="dropdown-fullscreen">
+      <a href="#about"><span>About Us</span></a>
+      <a href="#projects"><span>Our Projects</span></a>
+      <a href="#sponsors"><span>Sponsors</span></a>
+      <a href="#contact"><span>Contact Us</span></a>
     </div>
-  </div>
 
-  <div class="welcomeWrapper">
-  <img id="welcomeImg" src="src/kaiser-colour-rgb.png">
-  <p><span>Team 6989</span></p>
-  <h1><span class="reveal">More than robots.</span></h1>
-  <a href="#about" ><span>Discover More <i class="fa-solid fa-arrow-down"></i></span></a>
-  </div>
+    <script>
+      const button = document.getElementById("navbar-extend");
+      const dropdown = document.getElementById("dropdown-fullscreen");
 
-  <section id="about">
-    <h2>Who are we?</h2>
-  </section>
-    
-  </div></div>
-  <div id="dropdown-fullscreen">
-    <a href="#about"><span>About Us</span></a>
-    <a href="#projects"><span>Our Projects</span></a>
-    <a href="#sponsors"><span>Sponsors</span></a>
-    <a href="#contact"><span>Contact Us</span></a>
-  </div>
+      button.addEventListener("click", () => {
+        const currentState = button.getAttribute("data-state");
 
-<script>
-  const button = document.getElementById("navbar-extend");
-  const dropdown = document.getElementById("dropdown-fullscreen");
-  
-  button.addEventListener("click", () => {
-    const currentState = button.getAttribute("data-state");
+        if (!currentState || currentState === "closed") {
+          button.setAttribute("data-state", "opened");
+          button.setAttribute("aria-expanded", "true");
+          dropdown.classList.add("open");
+        } else {
+          button.setAttribute("data-state", "closed");
+          button.setAttribute("aria-expanded", "false");
+          dropdown.classList.remove("open");
+        }
+      });
+    </script>
 
-    if (!currentState || currentState === "closed") {
-      button.setAttribute("data-state", "opened");
-      button.setAttribute("aria-expanded", "true");
-      dropdown.classList.add("open");
-      
-    } else {
-      button.setAttribute("data-state", "closed");
-      button.setAttribute("aria-expanded", "false");
-      dropdown.classList.remove("open");
-    }
-  });
-</script>
+    <script>
+      const welcomeSection = document.querySelector(".welcomeWrapper");
+      const marginBottom = parseInt(
+        getComputedStyle(welcomeSection).marginBottom
+      );
+      const welcomeSectionHeight =
+        welcomeSection.offsetHeight + marginBottom + 80;
 
-<script>
-  const slick = new slickScroll.default({
-      root: "body"
-  });
+      const navbar = document.querySelector(".navbar");
+      window.addEventListener("scroll", () => {
+        const scrollPosition = window.scrollY;
+        const navbarBgOpacity =
+          0.5 + (scrollPosition / welcomeSectionHeight) * 0.5;
+        navbar.style.background = `rgba(0, 0, 0, ${navbarBgOpacity})`;
+      });
+    </script>
 
-  document.body.style.overflowX = "hidden";
-</script>
-</body>
+    <script>
+      function learnMore() {
+        //find an alternative way because luxy doesnt scroll
+        window.scrollBy(0, 750);
+      }
+    </script>
+
+    <script src="src/modules/luxy.min.js"></script>
+    <script>
+      luxy.init({
+        wrapperSpeed: 0.1,
+      });
+    </script>
+  </body>
 </html>
