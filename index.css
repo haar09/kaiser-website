@@ -424,6 +424,7 @@ section {
   justify-content: center;
   padding: 40px 3rem;
   margin: 0;
+  scroll-margin: 10.5vh;
 }
 
 @media screen and (max-width: 460px){
@@ -437,7 +438,6 @@ section {
   align-items: center;
   gap: 10%;
   flex-wrap: wrap;
-  scroll-margin: 13vh;
 }
 
 #about .textArea{
@@ -522,4 +522,47 @@ section {
 .flickity-button:focus {
   outline: none;
   box-shadow: none;
+}
+
+/*end of projcets*/
+
+#sponsors h2{
+  margin-bottom: 0;
+}
+
+#sponsors p{
+  text-align: center;
+}
+
+#sponsors .cloud {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#sponsors .cloud img{
+  display: block;
+  padding: 0.2rem 0.25rem;
+  position: relative;
+  border-radius: 1rem;
+}
+
+#sponsors .cloud img[data-weight="1"] { --size: 1; }
+#sponsors .cloud img[data-weight="2"] { --size: 2; }
+#sponsors .cloud img[data-weight="3"] { --size: 3; }
+#sponsors .cloud img[data-weight="4"] { --size: 4; }
+#sponsors .cloud img[data-weight="5"] { --size: 5; }
+#sponsors .cloud img[data-weight="6"] { --size: 6; }
+#sponsors .cloud img[data-weight="7"] { --size: 7; }
+#sponsors .cloud img[data-weight="8"] { --size: 8; }
+#sponsors .cloud img[data-weight="9"] { --size: 9; }
+#sponsors .cloud img[data-weight="10"] { --size: 10; }
+#sponsors .cloud img[data-weight="13"] { --size: 13; }
+
+#sponsors .cloud img {
+  width: calc(var(--size) * 2rem + 2rem);
+  max-width: 100%;
 }

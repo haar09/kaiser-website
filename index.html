@@ -99,7 +99,7 @@
           <img id="welcomeImg" src="src/kaiser-colour-rgb.png" />
           <p><span>Team 6989</span></p>
           <h1><span class="reveal">More than robots.</span></h1>
-          <a onclick="learnMore();"
+          <a href="#about"
             ><span>Discover More <i class="fa-solid fa-arrow-down"></i></span
           ></a>
         </div>
@@ -155,7 +155,36 @@
               <img src="src/projects/giz-final.png" />
               <p>Within the "Next Generation Science" project executed in cooperation with GIZ (German  International Cooperation Agency), Ministry of Youth and Sports and Global Mind Association we are <b>voluntarily mentoring an FLL team</b> which was founded in Kahramanmaras consisting of <b>refugee and Turkish</b> children.</p>
             </div>
+            <div class="carousel-cell">
+              <h3>LÖSEV</h3>
+              <img src="src/projects/losev.jpeg" />
+              <p>We partner with <b>LÖSEV</b> to empower children with Leukemia by providing <b>STEM and robotics education</b>.</p>
+              <p>This year, we aim to expand this project to other educational associations, nurturing children's interest in STEM, teamwork, and problem-solving, with the goal of enabling the LÖSEV FLL team to participate in <b>FLL Competitions</b>.</p>
+            </div>
+            <div class="carousel-cell">
+              <h3>Farkındalık 101</h3>
+              <img src="src/projects/farkindalik.jpg" />
+              <p>Through Farkındalık 101, we create awareness on various topics. We <b>share posts</b> on Instagram, release podcasts on Spotify <b>with guests</b> from different associations.</p>
+              <p>We publish every two months our <b>”Environment and Sustainability Magazine”</b>, which contains various interviews, articles and more.</p>
+            </div>
           </div>
+        </section>
+        <section id="sponsors">
+  <h2 data-aos="flip-up">Thanks to Our Sponsors</h2>
+  <p data-aos="flip-up" data-aos-anchor="#sponsors h2">From all of our team members to all of our sponsors:<br>Thank you very much for supporting us!</p>
+  <ul class="cloud">
+    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="4" src="src/sponsors/basaran.jpg" /></li>
+    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="3" src="src/sponsors/Dogus_Otomotiv.jpg" /></li>
+    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="9" src="src/sponsors/edding.jpg" /></li>
+    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="5" src="src/sponsors/itss.jpg" /></li>
+    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="9" src="src/sponsors/kastamonu.png" /></li>
+    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="7" src="src/sponsors/optimus.png" /></li>
+    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="6" src="src/sponsors/Logo-Webhelp-think-human-green.png" /></li>
+    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="8"  src="src/sponsors/solar.png" /></li>
+    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="5" src="src/sponsors/piramitmenkulkiymetler.jpg" /></li>
+    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="4"  src="src/sponsors/still.png" /></li>
+    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="13"  src="src/sponsors/koluman.png" /></li>
+  </ul>
         </section>
       </div>
     </div>
@@ -209,12 +238,6 @@
       });
     </script>
 
-    <script>
-      function learnMore() {
-        document.getElementById("about").scrollIntoView({ behavior: 'smooth' });
-      }
-    </script>
-
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
       Flickity.prototype._createResizeClass = function() {
@@ -237,7 +260,8 @@
         draggable: true,
         autoPlay: 3500,
         pauseAutoPlayOnHover: true,
-        imagesLoaded: true
+        imagesLoaded: true,
+        wrapAround: true
       });
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
