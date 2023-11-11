@@ -308,7 +308,7 @@ small {
   align-items: center;
   overflow: hidden;
   margin-top: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   gap: 40px;
 }
 
@@ -458,6 +458,49 @@ section {
   user-drag: none;
 }
 
+#reached h2{
+  margin-top: 0;
+}
+
+.numbers{
+  width: 100%;
+  display: grid;
+  gap: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 360px) {
+  .numbers { grid-template-columns: repeat(2, 1fr); 
+           gap: 4rem 1rem;}
+}
+
+@media (min-width: 600px) {
+  .numbers { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .numbers { grid-template-columns: repeat(4, 1fr); }
+}
+
+.number{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .25rem;
+  width: 100%;
+}
+
+.number h2{
+  margin: 0;
+  text-align: center;
+}
+.number p{
+  margin: 0;
+  text-align: center;
+  filter: brightness(.55);
+}
+
 #projects h2{
   margin-top: 0;
 }
@@ -565,4 +608,79 @@ section {
 #sponsors .cloud img {
   width: calc(var(--size) * 2rem + 2rem);
   max-width: 100%;
+}
+
+#contact h2{
+  margin-top: 0;
+}
+
+.contact-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+}
+
+.contact-card{
+  background: var(--background-alt);
+  padding: 1.5em 1.8em;
+  display: flex;
+  text-decoration: none;
+  border-radius: 1rem;
+  gap: 1.5em;
+  width: min(100%, 42ch);
+  transition: .3s;
+  align-items: center;
+  flex-direction: row;
+  height: 91px;
+}
+
+.contact-card:hover{
+  cursor: pointer;
+  filter: brightness(.7);
+}
+
+.contact-card div{
+  display:flex;
+  flex-direction: column;
+}
+
+.contact-card i{
+  font-size: 2rem;
+  vertical-align: middle;
+}
+
+.extra-info{
+  margin: 0;
+  font-size: .7rem;
+}
+
+.contact-info{
+  margin: 0;
+  font-size: 1rem;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+@media screen and (max-width: 500px){
+  .contact-card i{
+    font-size: 1.65rem;
+  }
+  #emreguner{
+    font-size: .9rem;
+  }
+}
+
+footer{
+  background: rgb(0, 0, 0);
+  width: 100%;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+footer span{
+  font-family: "Chakra Petch", sans-serif;
+  font-style: italic;
+  font-size: 1.1rem;
 }
