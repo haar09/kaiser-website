@@ -491,10 +491,11 @@ section {
   width: 100%;
 }
 
-.number h2{
+.number h2 {
   margin: 0;
   text-align: center;
 }
+
 .number p{
   margin: 0;
   text-align: center;
