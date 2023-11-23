@@ -1,282 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Team 6989 - Kaiser Robtics</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta content="Team 6989 - Kaiser Robtics" property="og:title" />
-    <meta
-      content="We are the Kaiser robotics team, taking its name from the German word meaning 'Emperor'. We aim to create 'more than robots', continuing on our way with strength and passion in order to contribute to society and become a part of the developing world to leave an impact."
-      property="og:description"
-    />
-    <meta name="description" content="We are the Kaiser robotics team, taking its name from the German word meaning 'Emperor'. We aim to create 'more than robots', continuing on our way with strength and passion in order to contribute to society and become a part of the developing world to leave an impact.">
-    <meta content="https://team6989.com/" property="og:url" />
 
-    <meta
-      content="/src/favicons/android-chrome-192x192.png"
-      property="og:image"
-    />
-    <meta
-      content="/src/favicons/android-chrome-192x192.png"
-      itemprop="image"
-    />
-    
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" type="text/css" href="index.css" />
-  
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/src/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/src/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/src/favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/src/favicons/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="/src/favicons/safari-pinned-tab.svg"
-      color="#34343c"
-    />
-    <link rel="shortcut icon" href="/src/favicons/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-config"
-      content="/src/favicons/browserconfig.xml"
-    />
-    <meta name="theme-color" content="#ED1C24" />
+<head>
+  <title>Team 6989 - Kaiser Robtics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="Team 6989 - Kaiser Robtics" property="og:title" />
+  <meta charset="UTF-8">
+  <meta
+    content="We are the Kaiser robotics team, taking its name from the German word meaning 'Emperor'. We aim to create 'more than robots', continuing on our way to contribute to society and become a part of the developing world to leave an impact."
+    property="og:description" />
+  <meta name="description"
+    content="We are the Kaiser robotics team, taking its name from the German word meaning 'Emperor'. We aim to create 'more than robots', continuing on our way to contribute to society and become a part of the developing world to leave an impact.">
+  <meta content="https://team6989.com/" property="og:url" />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  </head>
-  </head>
+  <meta content="/src/favicons/android-chrome-192x192.png" property="og:image" />
+  <meta content="/src/favicons/android-chrome-192x192.png" itemprop="image" />
 
-  <body>
-    <div class="bgVideoWrapper">
-      <div class="loading-spinner"></div>
-      <video autoplay muted loop id="bgVideo">
-        <source src="src/welcomebgvid_compressed.mp4" type="video/mp4" />
-      </video>
-    </div>
-    <div class="contentOutline">
-      <div class="navbar">
-        <div class="navbar-left">
-          <a href="#about">About Us</a>
-          <a href="#projects">Our Projects</a>
-        </div>
-        <div class="navbar-mid">
-          <h2>KAISER</h2>
-          <p>Robotics</p>
-        </div>
-        <div class="navbar-right">
-          <a href="#sponsors">Sponsors</a>
-          <a href="#contact">Contact Us</a>
-          <button
-            id="navbar-extend"
-            aria-controls="dropdown-fullscreen"
-            aria-expanded="false"
-          >
-            <svg
-              stroke="var(--text)"
-              fill="none"
-              class="hamburger"
-              viewBox="-10 -10 120 120"
-            >
-              <path
-                class="line"
-                stroke-width="8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"
-              ></path>
-            </svg>
-          </button>
-        </div>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" type="text/css" href="index.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/src/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/src/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/src/favicons/favicon-16x16.png" />
+  <link rel="manifest" href="/src/favicons/site.webmanifest" />
+  <link rel="mask-icon" href="/src/favicons/safari-pinned-tab.svg" color="#34343c" />
+  <link rel="shortcut icon" href="/src/favicons/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-config" content="/src/favicons/browserconfig.xml" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+</head>
+
+<body>
+  <div class="bgVideoWrapper">
+    <div class="loading-spinner"></div>
+    <video autoplay muted loop id="bgVideo">
+      <source src="src/welcomebgvid_compressed.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div class="contentOutline">
+    <div class="navbar">
+      <div class="navbar-left">
+        <a href="#about">About Us</a>
+        <a href="#projects">Our Projects</a>
       </div>
-      <div class="contentWrapper">
-        <div class="welcomeWrapper">
-          <img id="welcomeImg" src="src/kaiser-colour-rgb.png" alt="Kaiser Logo"/>
-          <p><span>Team 6989</span></p>
-          <h1><span class="reveal">More than robots.</span></h1>
-          <a href="#about"
-            ><span>Discover More <i class="fa-solid fa-arrow-down"></i></span
-          ></a>
-        </div>
-
-        <section id="about">
-          <div class="textArea" data-aos="fade-right">
-            <h2>Who are we?</h2>
-            <p>
-              We are the Kaiser robotics team, taking its name from the German
-              word meaning "Emperor". We first started our journey at Istanbul
-              German High School in 2014. Since then we have been participating
-              in robotics competitions. After learning about the FIRST
-              foundation in 2017, we started to participate in FIRST Robotics
-              Competition (FRC) with the robots we have made.
-              <br />
-              We aim to create "more than robots", continuing on our way with
-              strength and passion in order to contribute to society and become
-              a part of the developing world to leave an impact.
-            </p>
-          </div>
-          <div class="imageArea" data-aos="fade-left" data-aos-anchor=".textArea">
-            <img src="src/images/IMG_0015.jpeg" alt="Kaiser Robot from 2022"/>
-          </div>
-        </section>
-        <section id="reached">
-          <h2 data-aos="flip-down">We reached</h2>
-          <div class="numbers" id="numbers" data-aos="flip-down">
-            <div class="number"><h2 data-end="18">0</h2> <p>cities</p></div>
-            <div class="number"><h2 data-end="21">0</h2> <p>FRC teams</p></div>
-            <div class="number"><h2 data-end="17">0</h2> <p>FLL teams</p></div>
-            <div class="number"><h2 data-end="8">0</h2> <p>FLL Jr teams</p></div>
-            <div class="number"><h2 data-end="2000">0</h2> <p>high schoolers</p></div>
-            <div class="number"><h2 data-end="2700">0</h2> <p>middle schoolers</p></div>
-            <div class="number"><h2 data-end="1350">0</h2> <p>primary schoolers</p></div>
-            <div class="number"><h2 data-end="70">0</h2> <p>educators</p></div>
-          </div>
-        </section>
-        <section id="projects">
-          <h2 data-aos="zoom-out-down">Our Projects</h2>
-          <div class="main-carousel" data-aos="fade-up" data-aos-anchor="#projects h2">
-            <div class="carousel-cell">
-              <h3>Learntech</h3>
-              <img src="src/projects/learntech.JPG"/>
-              <p>Learntech is the <b>first and only</b> technology-science education platform established by a robotics team. Learntech is a project consisting of <b>4</b> categories.</p>
-              <p>Just with the first catagory of our project, <b>Learntech Semestr</b>, we  reached out to <b>250 students</b> from <b>18 cities</b>, <b>56 different schools</b>.</p>
-            </div>
-            <div class="carousel-cell">
-              <h3>Kaiser Talks</h3>
-              <img src="src/projects/kaiser-talks.jpeg" />
-              <p>In our webinar series where we talk about <b>Industry 4.0</b> and  <b>digital transformation</b>, we bring Deutsche Schule Istanbul (German High School) graduates with DSI students together.</p>
-              <p>Kaiser Talks, is an active project that continues to host the  leading names of the industry.</p>
-            </div>
-            <div class="carousel-cell">
-              <h3>Women In Society</h3>
-              <img src="src/projects/wis.jpg" />
-              <p>Based on the concept of gender equality, we are organizing Women in Society conferences. At these conferences, we discuss with our guests how <b>equal opportunities</b> can be better provided in <b>all areas</b> of society and how we can raise awareness on this issue.</p>
-            </div>
-            <div class="carousel-cell">
-              <h3>First Library</h3>
-              <img src="src/projects/firstlibrary.png" />
-              <p>With our First Library project we translate <b>all English resources</b> of the FIRST Community into <b>Turkish, German, French and  Japanese</b> so that more people can benefit from them.</p>
-              <p>At the same time we have translated the Wikipedia pages of <b>First, FRC, FLL ve FLL Jr.</b> into <b>Turkish and German.</b></p>
-            </div>
-            <div class="carousel-cell">
-              <h3>giz</h3>
-              <img src="src/projects/giz-final.png" />
-              <p>Within the "Next Generation Science" project executed in cooperation with GIZ (German  International Cooperation Agency), Ministry of Youth and Sports and Global Mind Association we are <b>voluntarily mentoring an FLL team</b> which was founded in Kahramanmaras consisting of <b>refugee and Turkish</b> children.</p>
-            </div>
-            <div class="carousel-cell">
-              <h3>LÖSEV</h3>
-              <img src="src/projects/losev.jpeg" />
-              <p>We partner with <b>LÖSEV</b> to empower children with Leukemia by providing <b>STEM and robotics education</b>.</p>
-              <p>This year, we aim to expand this project to other educational associations, nurturing children's interest in STEM, teamwork, and problem-solving, with the goal of enabling the LÖSEV FLL team to participate in <b>FLL Competitions</b>.</p>
-            </div>
-            <div class="carousel-cell">
-              <h3>Farkındalık 101</h3>
-              <img src="src/projects/farkindalik.jpg" />
-              <p>Through Farkındalık 101, we create awareness on various topics. We <b>share posts</b> on Instagram, release podcasts on Spotify <b>with guests</b> from different associations.</p>
-              <p>We publish every two months our <b>”Environment and Sustainability Magazine”</b>, which contains various interviews, articles and more.</p>
-            </div>
-          </div>
-        </section>
-        <section id="sponsors">
-  <h2 data-aos="flip-up">Thanks to Our Sponsors</h2>
-  <p data-aos="flip-up" data-aos-anchor="#sponsors h2">From all of our team members to all of our sponsors:<br>Thank you very much for supporting us!</p>
-  <ul class="cloud">
-    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="4" src="src/sponsors/basaran.webp" type="image/webp" /></li>
-    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="3" src="src/sponsors/Dogus_Otomotiv.webp" type="image/webp" /></li>
-    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="9" src="src/sponsors/edding.webp" type="image/webp" /></li>
-    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="5" src="src/sponsors/itss.webp" type="image/webp" /></li>
-    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="5" src="src/sponsors/simercom-elektronik-1.webp" type="image/webp" /></li>
-    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="9" src="src/sponsors/kastamonu.webp" type="image/webp" /></li>
-    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="7" src="src/sponsors/optimus.webp" type="image/webp" /></li>
-    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="6" src="src/sponsors/Logo-Webhelp-think-human-green.webp" type="image/webp" /></li>
-    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="8"  src="src/sponsors/solar.webp" type="image/webp" /></li>
-    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="5" src="src/sponsors/piramitmenkulkiymetler.webp" type="image/webp" /></li>
-    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="6"  src="src/sponsors/rockwell.webp" type="image/webp" /></li>
-    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="4"  src="src/sponsors/still.webp" type="image/webp" /></li>
-    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="13"  src="src/sponsors/koluman.webp" type="image/webp" /></li>
-    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="4"  src="src/sponsors/maib.webp" type="image/webp" /></li>
-    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="5"  src="src/sponsors/corning.webp" type="image/webp" /></li>
-    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="8"  src="src/sponsors/raytheon.webp" type="image/webp" /></li>
-    <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="7" src="src/sponsors/novatek.webp" type="image/webp" /></li>
-
-  </ul>
-        </section>
-        <section id="contact">
-          <h2 data-aos="fade-down">Contact Us</h2>
-          <div class="contact-div">
-            <a data-aos="flip-left" data-aos-anchor=".contact-div" href="mailto:6989kaiser@gmail.com" class="contact-card">
-              <i class="fa-solid fa-envelope"></i>
-              <p class="contact-info">6989kaiser@gmail.com</p>
-            </a>
-            <a data-aos="flip-left" data-aos-anchor=".contact-div" href="mailto:lalserdarogluu@gmail.com" class="contact-card">
-              <i class="fa-solid fa-envelope"></i>
-              <div><p class="contact-info">lalserdarogluu@gmail.com</p><p class="extra-info">(Lal Serdaroğlu / Team Captain)</p></div>
-            </a>
-            <a data-aos="flip-left" data-aos-anchor=".contact-div" href="mailto:emreguner.kaiser@gmail.com" class="contact-card">
-              <i class="fa-solid fa-envelope"></i>
-              <div><p id="emreguner" class="contact-info">emreguner.kaiser@gmail.com</p><p class="extra-info">(Emre Güner / Team Captain)</p></div>
-            </a>
-            <a data-aos="flip-left" data-aos-anchor=".contact-div" href="https://www.instagram.com/frckaiser6989" class="contact-card">
-              <i class="fa-brands fa-instagram"></i>
-              <p class="contact-info">@frckaiser6989</p>
-            </a>
-            <a data-aos="flip-left" data-aos-anchor=".contact-div" href="tel:+905330466379" class="contact-card">
-              <i class="fa-solid fa-square-phone"></i>
-              <div><p class="contact-info">+905330466379</p><p class="extra-info">(Lal Serdaroğlu / Team Captain)</p></div>
-            </a>
-            <a data-aos="flip-left" data-aos-anchor=".contact-div" href="tel:+905538354250" class="contact-card">
-              <i class="fa-solid fa-square-phone"></i>
-              <div><p class="contact-info">+905538354250</p><p class="extra-info">(Emre Güner / Team Captain)</p></div>
-            </a>
-            <a data-aos="flip-left" data-aos-anchor=".contact-div" href="https://linkedin.com/company/kaiser6989" class="contact-card">
-              <i class="fa-brands fa-linkedin"></i>
-              <p class="contact-info">Kaiser Robotics Team</p>
-            </a>
-          </div>
-        </section>
+      <div class="navbar-mid">
+        <h2>KAISER</h2>
+        <p>Robotics</p>
       </div>
-      <footer>
-        <p>© Copyright 2023, <span>KAISER</span> Robotics #6989 / Website by: Haluk Arda Işıloğlu</p>
-      </footer>
+      <div class="navbar-right">
+        <a href="#sponsors">Sponsors</a>
+        <a href="#contact">Contact Us</a>
+        <button id="navbar-extend" aria-controls="dropdown-fullscreen" aria-expanded="false">
+          <svg stroke="var(--text)" fill="none" class="hamburger" viewBox="-10 -10 120 120">
+            <path class="line" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"
+              d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"></path>
+          </svg>
+        </button>
+      </div>
     </div>
-    <div id="dropdown-fullscreen">
-      <a href="#about"><span>About Us</span></a>
-      <a href="#projects"><span>Our Projects</span></a>
-      <a href="#sponsors"><span>Sponsors</span></a>
-      <a href="#contact"><span>Contact Us</span></a>
-    </div>
+    <div class="contentWrapper">
+      <div class="welcomeWrapper">
+        <img id="welcomeImg" src="src/kaiser-colour-rgb.png" alt="Kaiser Logo" />
+        <p><span>Team 6989</span></p>
+        <h1><span class="reveal">More than robots.</span></h1>
+        <a href="#about"><span>Discover More <i class="fa-solid fa-arrow-down"></i></span></a>
+      </div>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    
-    <script>
-        document.getElementById('bgVideo').play();
-    </script>
-    
-    <script>
-      const counterAnim = (qSelector) => {
-       const target = document.querySelectorAll(qSelector);
-              
+      <section id="about">
+        <div class="textArea" data-aos="fade-right">
+          <h2>Who are we?</h2>
+          <p>
+            We are the Kaiser robotics team, taking its name from the German
+            word meaning "Emperor". We first started our journey at Istanbul
+            German High School in 2014. Since then we have been participating
+            in robotics competitions. After learning about the FIRST
+            foundation in 2017, we started to participate in FIRST Robotics
+            Competition (FRC) with the robots we have made.
+            <br />
+            We aim to create "more than robots", continuing on our way with
+            strength and passion in order to contribute to society and become
+            a part of the developing world to leave an impact.
+          </p>
+        </div>
+        <div class="imageArea" data-aos="fade-left" data-aos-anchor=".textArea">
+          <img src="src/images/IMG_0015.webp" alt="Kaiser Robot from 2022" />
+        </div>
+      </section>
+      <section id="reached">
+        <h2 data-aos="flip-down">We reached</h2>
+        <div class="numbers" id="numbers" data-aos="flip-down">
+          <div class="number">
+            <h2 data-end="18">0</h2>
+            <p>cities</p>
+          </div>
+          <div class="number">
+            <h2 data-end="21">0</h2>
+            <p>FRC teams</p>
+          </div>
+          <div class="number">
+            <h2 data-end="17">0</h2>
+            <p>FLL teams</p>
+          </div>
+          <div class="number">
+            <h2 data-end="8">0</h2>
+            <p>FLL Jr teams</p>
+          </div>
+          <div class="number">
+            <h2 data-end="2000">0</h2>
+            <p>high schoolers</p>
+          </div>
+          <div class="number">
+            <h2 data-end="2700">0</h2>
+            <p>middle schoolers</p>
+          </div>
+          <div class="number">
+            <h2 data-end="1350">0</h2>
+            <p>primary schoolers</p>
+          </div>
+          <div class="number">
+            <h2 data-end="70">0</h2>
+            <p>educators</p>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h2 data-aos="zoom-out-down">Our Projects</h2>
+        <div class="main-carousel" data-aos="fade-up" data-aos-anchor="#projects h2">
+          <div class="carousel-cell">
+            <h3>Learntech</h3>
+            <img src="src/projects/learntech.webp" />
+            <p>Learntech is the <b>first and only</b> technology-science education platform established by a robotics
+              team. Learntech is a project consisting of <b>4</b> categories.</p>
+            <p>Just with the first catagory of our project, <b>Learntech Semestr</b>, we reached out to <b>250
+                students</b> from <b>18 cities</b>, <b>56 different schools</b>.</p>
+          </div>
+          <div class="carousel-cell">
+            <h3>Kaiser Talks</h3>
+            <img src="src/projects/kaiser-talks.webp" />
+            <p>In our webinar series where we talk about <b>Industry 4.0</b> and <b>digital transformation</b>, we bring
+              Deutsche Schule Istanbul (German High School) graduates with DSI students together.</p>
+            <p>Kaiser Talks, is an active project that continues to host the leading names of the industry.</p>
+          </div>
+          <div class="carousel-cell">
+            <h3>Women In Society</h3>
+            <img src="src/projects/wis.webp" />
+            <p>Based on the concept of gender equality, we are organizing Women in Society conferences. At these
+              conferences, we discuss with our guests how <b>equal opportunities</b> can be better provided in <b>all
+                areas</b> of society and how we can raise awareness on this issue.</p>
+          </div>
+          <div class="carousel-cell">
+            <h3>First Library</h3>
+            <img src="src/projects/firstlibrary.webp" />
+            <p>With our First Library project we translate <b>all English resources</b> of the FIRST Community into
+              <b>Turkish, German, French and Japanese</b> so that more people can benefit from them.</p>
+            <p>At the same time we have translated the Wikipedia pages of <b>First, FRC, FLL ve FLL Jr.</b> into
+              <b>Turkish and German.</b></p>
+          </div>
+          <div class="carousel-cell">
+            <h3>giz</h3>
+            <img src="src/projects/giz-final.webp" />
+            <p>Within the "Next Generation Science" project executed in cooperation with GIZ (German International
+              Cooperation Agency), Ministry of Youth and Sports and Global Mind Association we are <b>voluntarily
+                mentoring an FLL team</b> which was founded in Kahramanmaras consisting of <b>refugee and Turkish</b>
+              children.</p>
+          </div>
+          <div class="carousel-cell">
+            <h3>LÖSEV</h3>
+            <img src="src/projects/losev.webp" />
+            <p>We partner with <b>LÖSEV</b> to empower children with Leukemia by providing <b>STEM and robotics
+                education</b>.</p>
+            <p>This year, we aim to expand this project to other educational associations, nurturing children's interest
+              in STEM, teamwork, and problem-solving, with the goal of enabling the LÖSEV FLL team to participate in
+              <b>FLL Competitions</b>.</p>
+          </div>
+          <div class="carousel-cell">
+            <h3>Farkındalık 101</h3>
+            <img src="src/projects/farkindalik.webp" />
+            <p>Through Farkındalık 101, we create awareness on various topics. We <b>share posts</b> on Instagram,
+              release podcasts on Spotify <b>with guests</b> from different associations.</p>
+            <p>We publish every two months our <b>”Environment and Sustainability Magazine”</b>, which contains various
+              interviews, articles and more.</p>
+          </div>
+        </div>
+      </section>
+      <section id="sponsors">
+        <h2 data-aos="flip-up">Thanks to Our Sponsors</h2>
+        <p data-aos="flip-up" data-aos-anchor="#sponsors h2">From all of our team members to all of our
+          sponsors:<br>Thank you very much for supporting us!</p>
+        <ul class="cloud">
+          <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="4"
+              src="src/sponsors/basaran.webp" /></li>
+          <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="3"
+              src="src/sponsors/Dogus_Otomotiv.webp" /></li>
+          <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="9"
+              src="src/sponsors/edding.webp" /></li>
+          <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="5" src="src/sponsors/itss.webp" />
+          </li>
+          <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="5"
+              src="src/sponsors/simercom-elektronik-1.webp" /></li>
+          <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="9"
+              src="src/sponsors/kastamonu.webp" /></li>
+          <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="7"
+              src="src/sponsors/optimus.webp" /></li>
+          <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="6"
+              src="src/sponsors/Logo-Webhelp-think-human-green.webp" /></li>
+          <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="8"
+              src="src/sponsors/solar.webp" /></li>
+          <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="5"
+              src="src/sponsors/piramitmenkulkiymetler.webp" /></li>
+          <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="6"
+              src="src/sponsors/rockwell.webp" /></li>
+          <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="4"
+              src="src/sponsors/still.webp" /></li>
+          <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="13"
+              src="src/sponsors/koluman.webp" /></li>
+          <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="4" src="src/sponsors/maib.webp" />
+          </li>
+          <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="5"
+              src="src/sponsors/corning.webp" /></li>
+          <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="8"
+              src="src/sponsors/raytheon.webp" /></li>
+          <li data-aos="zoom-in" data-aos-anchor="#sponsors .cloud"><img data-weight="7"
+              src="src/sponsors/novatek.webp" /></li>
+
+        </ul>
+      </section>
+      <section id="contact">
+        <h2 data-aos="fade-down">Contact Us</h2>
+        <div class="contact-div">
+          <a data-aos="flip-left" data-aos-anchor=".contact-div" href="mailto:6989kaiser@gmail.com"
+            class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <p class="contact-info">6989kaiser@gmail.com</p>
+          </a>
+          <a data-aos="flip-left" data-aos-anchor=".contact-div" href="mailto:lalserdarogluu@gmail.com"
+            class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <p class="contact-info">lalserdarogluu@gmail.com</p>
+              <p class="extra-info">(Lal Serdaroğlu / Team Captain)</p>
+            </div>
+          </a>
+          <a data-aos="flip-left" data-aos-anchor=".contact-div" href="mailto:emreguner.kaiser@gmail.com"
+            class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <p id="emreguner" class="contact-info">emreguner.kaiser@gmail.com</p>
+              <p class="extra-info">(Emre Güner / Team Captain)</p>
+            </div>
+          </a>
+          <a data-aos="flip-left" data-aos-anchor=".contact-div" href="https://www.instagram.com/frckaiser6989"
+            class="contact-card">
+            <i class="fa-brands fa-instagram"></i>
+            <p class="contact-info">@frckaiser6989</p>
+          </a>
+          <a data-aos="flip-left" data-aos-anchor=".contact-div" href="tel:+905330466379" class="contact-card">
+            <i class="fa-solid fa-square-phone"></i>
+            <div>
+              <p class="contact-info">+905330466379</p>
+              <p class="extra-info">(Lal Serdaroğlu / Team Captain)</p>
+            </div>
+          </a>
+          <a data-aos="flip-left" data-aos-anchor=".contact-div" href="tel:+905538354250" class="contact-card">
+            <i class="fa-solid fa-square-phone"></i>
+            <div>
+              <p class="contact-info">+905538354250</p>
+              <p class="extra-info">(Emre Güner / Team Captain)</p>
+            </div>
+          </a>
+          <a data-aos="flip-left" data-aos-anchor=".contact-div" href="https://linkedin.com/company/kaiser6989"
+            class="contact-card">
+            <i class="fa-brands fa-linkedin"></i>
+            <p class="contact-info">Kaiser Robotics Team</p>
+          </a>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>© Copyright 2023, <span>KAISER</span> Robotics #6989 / Website by: Haluk Arda Işıloğlu and Emre Bora Kaynar</p>
+    </footer>
+  </div>
+  <div id="dropdown-fullscreen">
+    <a href="#about"><span>About Us</span></a>
+    <a href="#projects"><span>Our Projects</span></a>
+    <a href="#sponsors"><span>Sponsors</span></a>
+    <a href="#contact"><span>Contact Us</span></a>
+  </div>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    document.getElementById('bgVideo').play();
+  </script>
+
+  <script>
+    const counterAnim = (qSelector) => {
+      const target = document.querySelectorAll(qSelector);
+
       target.forEach(target => {
         let startTimestamp = null;
         const step = (timestamp) => {
@@ -289,96 +315,107 @@
         };
         window.requestAnimationFrame(step);
       });
-      };
-      
-      const targetElement = document.querySelector("#numbers");
+    };
 
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            counterAnim(".number h2");
-            observer.unobserve(entry.target);
-          }
-        });
-      });
+    const targetElement = document.querySelector("#numbers");
 
-      observer.observe(targetElement);
-    </script>
-    
-    <script>
-      const button = document.getElementById("navbar-extend");
-      const dropdown = document.getElementById("dropdown-fullscreen");
-      const dropdown_links = document.querySelectorAll("#dropdown-fullscreen a");
-
-      function toggleDropdown() {
-        const currentState = button.getAttribute("data-state");
-
-        if (!currentState || currentState === "closed") {
-          button.setAttribute("data-state", "opened");
-          button.setAttribute("aria-expanded", "true");
-          dropdown.classList.add("open");
-        } else {
-          button.setAttribute("data-state", "closed");
-          button.setAttribute("aria-expanded", "false");
-          dropdown.classList.remove("open");
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          counterAnim(".number h2");
+          observer.unobserve(entry.target);
         }
+      });
+    });
+
+    observer.observe(targetElement);
+  </script>
+
+  <script>
+    const button = document.getElementById("navbar-extend");
+    const dropdown = document.getElementById("dropdown-fullscreen");
+    const dropdown_links = document.querySelectorAll("#dropdown-fullscreen a");
+
+    function toggleDropdown() {
+      const currentState = button.getAttribute("data-state");
+
+      if (!currentState || currentState === "closed") {
+        button.setAttribute("data-state", "opened");
+        button.setAttribute("aria-expanded", "true");
+        dropdown.classList.add("open");
+      } else {
+        button.setAttribute("data-state", "closed");
+        button.setAttribute("aria-expanded", "false");
+        dropdown.classList.remove("open");
       }
+    }
 
-      button.addEventListener("click", toggleDropdown);
+    button.addEventListener("click", toggleDropdown);
 
-      dropdown_links.forEach(function (elem) {
-        elem.addEventListener("click", toggleDropdown);
-      });
-    </script>
+    dropdown_links.forEach(function (elem) {
+      elem.addEventListener("click", toggleDropdown);
+    });
+  </script>
 
-    <script>
-      const welcomeSection = document.querySelector(".welcomeWrapper");
-      const marginBottom = parseInt(
-        getComputedStyle(welcomeSection).marginBottom
-      );
-      const welcomeSectionHeight =
-        welcomeSection.offsetHeight + marginBottom + 80;
+  <script>
+    const welcomeSection = document.querySelector(".welcomeWrapper");
+    const marginBottom = parseInt(
+      getComputedStyle(welcomeSection).marginBottom
+    );
+    const welcomeSectionHeight =
+      welcomeSection.offsetHeight + marginBottom + 80;
 
-      const navbar = document.querySelector(".navbar");
-      window.addEventListener("scroll", () => {
-        const scrollPosition = window.scrollY;
-        const navbarBgOpacity =
-          0.5 + (scrollPosition / welcomeSectionHeight) * 0.5;
-        navbar.style.background = `rgba(0, 0, 0, ${navbarBgOpacity})`;
-      });
-    </script>
+    const navbar = document.querySelector(".navbar");
+    window.addEventListener("scroll", () => {
+      const scrollPosition = window.scrollY;
+      const navbarBgOpacity =
+        0.5 + (scrollPosition / welcomeSectionHeight) * 0.5;
+      navbar.style.background = `rgba(0, 0, 0, ${navbarBgOpacity})`;
+    });
+  </script>
 
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script>
-      Flickity.prototype._createResizeClass = function() {
-        this.element.classList.add('flickity-resize');
-      };
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script>
+    Flickity.prototype._createResizeClass = function () {
+      this.element.classList.add('flickity-resize');
+    };
 
-      Flickity.createMethods.push('_createResizeClass');
+    Flickity.createMethods.push('_createResizeClass');
 
-      var resize = Flickity.prototype.resize;
-      Flickity.prototype.resize = function() {
-        this.element.classList.remove('flickity-resize');
-        resize.call( this );
-        this.element.classList.add('flickity-resize');
-      };
+    var resize = Flickity.prototype.resize;
+    Flickity.prototype.resize = function () {
+      this.element.classList.remove('flickity-resize');
+      resize.call(this);
+      this.element.classList.add('flickity-resize');
+    };
 
-      $('.main-carousel').flickity({
-        // options
-        cellAlign: 'left',
-        contain: true,
-        draggable: true,
-        autoPlay: 3500,
-        pauseAutoPlayOnHover: true,
-        imagesLoaded: true,
-        wrapAround: true
-      });
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
+    $('.main-carousel').flickity({
+      // options
+      cellAlign: 'left',
+      contain: true,
+      draggable: true,
+      autoPlay: 3500,
+      pauseAutoPlayOnHover: true,
+      imagesLoaded: true,
+      wrapAround: true
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
 
-      });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+<!--
+  888               888          888      
+  888               888          888      
+  888               888          888      
+  88888b.   8888b.  888 888  888 888  888 
+  888 "88b     "88b 888 888  888 888 .88P 
+  888  888 .d888888 888 888  888 888888K  
+  888  888 888  888 888 Y88b 888 888 "88b 
+  888  888 "Y888888 888  "Y88888 888  888 
+-->
+
 </html>
