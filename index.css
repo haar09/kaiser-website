@@ -502,6 +502,16 @@ section {
   filter: brightness(.55);
 }
 
+.number h3 {
+  margin: 0;
+}
+
+.number div {
+  display: flex;
+  align-items: center;
+  margin:0;
+}
+
 #projects h2{
   margin-top: 0;
 }
