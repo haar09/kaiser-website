@@ -614,7 +614,13 @@ section {
 #sponsors .cloud img[data-weight="8"] { --size: 8; }
 #sponsors .cloud img[data-weight="9"] { --size: 9; }
 #sponsors .cloud img[data-weight="10"] { --size: 10; }
+#sponsors .cloud img[data-weight="11"] { --size: 11; }
+#sponsors .cloud img[data-weight="12"] { --size: 12; }
 #sponsors .cloud img[data-weight="13"] { --size: 13; }
+#sponsors .cloud img[data-weight="14"] { --size: 14; }
+#sponsors .cloud img[data-weight="15"] { --size: 15; }
+#sponsors .cloud img[data-weight="16"] { --size: 16; }
+#sponsors .cloud img[data-weight="17"] { --size: 17; }
 
 #sponsors .cloud img {
   width: calc(var(--size) * 2rem + 2rem);
